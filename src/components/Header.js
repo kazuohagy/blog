@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header>
-      <h1>My Blog</h1>
+      <h1>Bem vindo ao meu blog 👋</h1>
       <a>teste1</a>
       <a>teste2</a>
       <a>teste3</a>
