@@ -14,6 +14,7 @@ function App() {
     <div className="App">
       <Header />
       <div> Este blog e deducado a passar um pouco dos meus estudos em programação.</div>
+      <div>Estou estudando sobre arquitetura de software em dotNet.</div>
     </div>
   );
 }
