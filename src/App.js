@@ -14,6 +14,13 @@ function App() {
     <div className="App">
       <Header />
       <div> dificil</div>
+        <div>
+          <p>
+              O desempenho é um dos diversos fatores que podem influenciar a decisão de hospedar sua infraestrutura ou aplicativos no Azure. No entanto, simplesmente implantar recursos não marca o fim da sua interação:
+               é crucial avaliar se você está realmente colhendo os benefícios da hospedagem no Azure e justificando o retorno sobre o investimento. É possível que certos aspectos dos seus aplicativos não estejam atendendo
+                às expectativas de desempenho, tanto para você quanto para seus usuários.
+          </p>
+        </div>
     </div>
   );
 }
