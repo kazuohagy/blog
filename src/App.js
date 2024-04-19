@@ -3,7 +3,7 @@ import './App.css';
 import React from 'react';
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import Home from './pages/Home';
-// import About from './pages/About';
+// import About from './pages/About';s
 // import Post from './pages/Post';
 // import NotFound from './pages/NotFound';
 import Header from './components/Header';
@@ -13,7 +13,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div> dificil</div>
+      <div> Este blog e deducado a passar um pouco dos meus estudos em programação.</div>
+      <div>Estou estudando sobre arquitetura de software em dotNet.</div>
         <div>
           <p>
               O desempenho é um dos diversos fatores que podem influenciar a decisão de hospedar sua infraestrutura ou aplicativos no Azure. No entanto, simplesmente implantar recursos não marca o fim da sua interação:
