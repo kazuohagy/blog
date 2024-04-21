@@ -1,17 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import Home from './pages/Home';
 // import About from './pages/About';s
 // import Post from './pages/Post';
 // import NotFound from './pages/NotFound';
+
+import Confetti from 'react-confetti'
 import Header from './components/Header';
 
 
 function App() {
+  const [confete, setConfete] = useState(true);
+  const [windowSize, setWindowSize] = React.useState({
+    x: window.innerWidth,
+    y: window.innerHeight
+  });
+  function handleWindowSizeChange() {
+    setWindowSize({ x: window.innerWidth, y: window.innerHeight });
+  }
+  //parar o confete depois de 5 segundos
+  setTimeout(() => {
+    setConfete(false);
+  }, 5000);
+
+  React.useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    }
+  }, []);
   return (
+ 
+    
+
     <div className="App">
+      {<Confetti
+        width={windowSize.x}
+        height={windowSize.y}
+        recycle= {confete}
+      />}
       <Header />
       <div> Este blog e deducado a passar um pouco dos meus estudos em programação.</div>
       <div>Estou estudando sobre arquitetura de software em dotNet.</div>
