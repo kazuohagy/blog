@@ -40,7 +40,7 @@ function App() {
       />}
       <Header />
       <div> Este blog e deducado a passar um pouco dos meus estudos em programação.</div>
-      <div>Estou estudando sobre arquitetura de software em dotNet.</div>
+      <div>Estou estudando sobre arquitetura de software em dotNet.teste</div>
         <div>
           <p>
               O desempenho é um dos diversos fatores que podem influenciar a decisão de hospedar sua infraestrutura ou aplicativos no Azure. No entanto, simplesmente implantar recursos não marca o fim da sua interação:
